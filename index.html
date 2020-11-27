@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Greencard</title>
+</head>
+
+<body>
+    <div class="green-card">
+        <h1>
+            green card
+        </h1>
+        <form action="http://echo.htmlacademy.ru">
+            <fieldset>
+                <legend>Foydalanuvchi</legend>
+
+                <div class="info-row">
+                    <label class="left-side" for="name">ISM</label>
+                    <input class="right-side" type="text" id="name" name="name" placeholder="Ismingiz">
+                </div>
+                <div class="info-row">
+                    <label class="left-side" for="surname">Familiya</label>
+                    <input class="right-side" type="text" id="surname" name="surname" placeholder="Familiyangiz">
+                </div>
+
+                <div class="info-row">
+                    <label class="left-side" for="phone_number">Telefon raqam</label>
+                    <input class="right-side" type="tel" id="phone_number" name="phone_number"
+                        placeholder="Telefon raqamingiz">
+                </div>
+
+                <div class="info-row">
+                    <label class="left-side" for="email_address">E-mail</label>
+                    <input class="right-side" type="email" id="email_address" name="email_address"
+                        placeholder="Email kiriting">
+                </div>
+
+                <div class="info-row">
+                    <label class="left-side" for="birthday">Tug'ilgan kun</label>
+                    <input class="right-side" type="date" id="birthday" name="birthday">
+                </div>
+
+                <div class="info-row">
+                    <label class="left-side" for="passport_scanned_file">Passport scan</label>
+
+                    <input class="right-side" accept="image/jpeg, image.png" type="file" id="passport_scanned_file"
+                        name="passport_scanned_file">
+                </div>
+
+                <div class="info-row">
+                    <h2>Jinsingiz</h2>
+                    <div class="gender">
+                        <div class="female">
+                            <label for="female">Ayol</label>
+                            <input type="radio" id="female" value="female" name="gender">
+                        </div>
+
+                        <div class="male">
+                            <label for="male">Erkak</label>
+                            <input type="radio" id="male" value="male" name="gender">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <label class="left-side" for="fav-color">Sevimli rangingiz</label>
+                    <input class="right-side" type="color" id="fav-color" name="fav-color"
+                        placeholder="Sevimli rangingiz">
+                </div>
+
+                <div class="info-row">
+                    <h2>Taomlarni tanlang</h2>
+                    <div class="food-data">
+                        <input class="right-side" placeholder="Taomlarni tanlang" list="some-datalist" name="fav-meal">
+                        <datalist id="some-datalist">
+                            <option value="osh">Osh</option>
+                            <option value="sho'rva">Sho'rva</option>
+                            <option value="manti">Manti</option>
+                            <option value="lag'mon">Lag'mon</option>
+                            <option value="honim">Honim</option>
+                            <option value="tandir">Tandir</option>
+                            <option value="kabob">Kabob</option>
+                            <option value="grill">Grill</option>
+                            <option value="shirinlik">Shirinlik</option>
+                            <option value="dissert">Dissert</option>
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <label class="left-side" for="fav-teacher">Sevimli o'qituvchingiz</label>
+                    <select class="right-side" name="fav-teacher" id="fav-teacher">Sevimli o'qituvchingiz
+                        <option value="humoyun_innayatov">Humoyun Innayatov</option>
+                        <option value="muhammdjon_najimov">Muhammadjon Najimov</option>
+                        <option value="muhammadjovohir_suratov">Muhammadjavohir Suratov</option>
+                    </select>
+                </div>
+
+                <div class="info-row textarea">
+                    <label class="left-side" for="about_me">O'zingiz haqingizda</label>
+                    <textarea class="right-side" name="about_me" id="about_me" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="memorize">
+                    <label for="memorize">Eslab qolish</label>
+                    <div class="check">
+                        <input type="checkbox" id="memorize">
+                    </div>
+                </div>
+                <button type="submit">Topshirish</button>
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+
+</html>
